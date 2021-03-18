@@ -1,0 +1,444 @@
+:root {
+  --icon-Color: #676b6e;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 14px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+i {
+  width: 15px;
+  margin-right: 14px;
+  color: #505254;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+.row {
+  display: flex;
+}
+
+body {
+  background-color: #ffffff;
+}
+.container {
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c9c3c3;
+  border-radius: 2px;
+  border: 3px solid #ffffff;
+}
+
+/* -------------Header------------ */
+
+header {
+  width: 100%;
+  padding: 13px 12px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header .row {
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  width: 20%;
+}
+header .logo-image {
+  width: 105px;
+}
+.header-icon {
+  margin-top: 6px;
+}
+.setting {
+  width: 17%;
+}
+.header .logo img {
+  min-width: 50px;
+}
+header i {
+  color: darkgray;
+}
+header .search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-bar button {
+  height: 40px;
+  width: 70px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 6px;
+  margin: auto;
+  font-size: 1rem;
+  outline: none;
+  border: 1px lightgrey solid;
+  border-radius: 3px;
+}
+.search-bar {
+  width: 70vw;
+  text-align: center;
+}
+.short-icon {
+  display: none;
+}
+.search-bar form {
+  width: 100%;
+}
+.search-bar .search-btn {
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  margin-left: -4px;
+  height: 29px;
+}
+.search-btn i {
+  color: #67686b;
+}
+.search-bar .microphone-btn {
+  border: none;
+  outline: none;
+  background: none;
+  width: 55px;
+}
+.microphone-btn i {
+  color: #4e4f52;
+}
+.app img {
+  margin-top: 8px;
+}
+.setting-user i,
+.setting-app i {
+  margin-top: 12px;
+}
+
+.setting i {
+  color: var(--icon-Color);
+}
+
+.keyboard {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  color: var(--icon-Color);
+}
+.search-input {
+  position: relative;
+  display: inline;
+}
+
+/* --------------menu----------------- */
+
+.menu {
+  width: 240px;
+  position: fixed;
+  left: 0;
+  height: 90%;
+}
+
+.menu:hover {
+  overflow: auto;
+}
+.menu::-webkit-scrollbar {
+  width: 13px;
+}
+
+.menu::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #c9c3c3;
+  border-radius: 2px;
+  border: 3px solid #ffffff;
+}
+
+.menu-group {
+  border-bottom: 1px lightgray solid;
+}
+.menu-item {
+  padding: 10px 8px;
+}
+
+.menu-footer a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--icon-Color);
+}
+.menu i {
+  margin-right: 27px;
+}
+.menu li:hover {
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+.menu-footer li {
+  display: inline;
+  margin-right: 3px;
+}
+.login-btn {
+  border: 1px solid #065fd4;
+  padding: 10px 0;
+  width: 130px;
+
+  color: #065fd4;
+  text-align: center;
+  font-weight: bold;
+}
+.login-btn span {
+  font-size: 0.9rem;
+}
+.login-btn i {
+  margin-right: 5px !important;
+  color: #065fd4;
+}
+
+.short-menu {
+  display: none;
+}
+
+.short-menu {
+  width: 150px;
+}
+.short-menu li {
+  padding: 13px 0;
+}
+.short-menu p {
+  font-size: 0.7rem;
+}
+.short-menu .icon {
+  text-align: center;
+}
+.short-menu i {
+  margin: auto;
+}
+.showMenu {
+  display: none;
+}
+.show-short-menu {
+  display: block;
+}
+.move-content {
+  margin-left: 240px;
+}
+.sub-menu {
+  display: none;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  overflow: auto;
+}
+.sub-menu .logo {
+  display: flex;
+  padding: 13px 10px;
+}
+
+/* -----------Content---------- */
+
+.main-content {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+.content-group {
+  border-bottom: 2px lightgray solid;
+}
+.item {
+  margin: 10px;
+  width: 23%;
+}
+.item-tittle strong {
+  max-width: 100%;
+  max-height: 40px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.item-detail {
+  margin-top: 0.8rem;
+  line-height: 20px;
+  color: #4e4f52;
+}
+.item-info .author,
+.view-count,
+.time-post {
+  font-size: 1rem;
+}
+.view-count span,
+.time-post span {
+  display: inline-block;
+  max-width: 40%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-time,
+.item-detail {
+  display: flex;
+}
+
+.item-avatar img {
+  max-width: 80px;
+}
+.time-post::before {
+  content: "•";
+  margin: 0.3rem;
+}
+.item-image {
+  min-width: 80px;
+}
+.item-avatar {
+  margin-right: 5px;
+}
+.content-group h2 {
+  font-size: 1.2rem;
+}
+.content-group .row {
+  flex-wrap: wrap;
+}
+
+/* ------------Responsive--------------- */
+/* mobile*/
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 9px;
+  }
+  img {
+    max-width: 90%;
+  }
+  .header .container {
+    padding-left: 0px;
+  }
+  .row {
+    width: 100%;
+  }
+  .main-content {
+    padding: 0;
+    margin-left: 35px;
+  }
+  .menu {
+    display: none;
+  }
+  .short-menu {
+    display: block;
+    width: 35px;
+    position: fixed;
+    left: 0;
+    height: 90%;
+    z-index: 99;
+  }
+  .short-menu li {
+    padding: 5px;
+  }
+
+  .setting .row {
+    overflow: hidden;
+  }
+  .fas,
+  .fab {
+    font-size: 1.2rem;
+  }
+  .item {
+    min-width: 23vw;
+  }
+  .item-avatar img {
+    max-width: 10px !important;
+  }
+
+  .search-bar form,
+  .login-btn {
+    display: none;
+  }
+  .short-icon {
+    display: block;
+    padding-top: 8px;
+  }
+  .item-time {
+    font-size: 0.1rem;
+  }
+  .item-tittle,
+  .item-info {
+    line-height: 8px;
+  }
+  .item-info span {
+    font-size: 0.5rem;
+  }
+  .item-avatar {
+    margin-right: 0.2rem;
+  }
+}
+
+/* tablet*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .short-menu {
+    display: block;
+    width: 70px;
+    position: fixed;
+    left: 0;
+    height: 90%;
+    z-index: 99;
+  }
+
+  .item-info span {
+    font-size: 0.6rem;
+  }
+  .menu {
+    display: none;
+  }
+  .main-content {
+    margin-left: 70px;
+  }
+}
+/* small laptop */
+@media only screen and (min-width: 993px) and (max-width: 1270px) {
+  .short-menu {
+    display: block;
+    width: 70px;
+    position: fixed;
+    left: 0;
+    height: 90%;
+    z-index: 99;
+  }
+
+  .item-info span {
+    font-size: 0.6rem;
+  }
+  .menu {
+    display: none;
+  }
+  .main-content {
+    margin-left: 70px;
+  }
+}
