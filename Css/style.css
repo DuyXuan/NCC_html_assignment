@@ -1,5 +1,6 @@
 :root {
-  --icon-Color: #676b6e;
+  --icon-color: #676b6e;
+  --scrollbar-color: #ffffff;
 }
 * {
   box-sizing: border-box;
@@ -48,20 +49,20 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: var(--scrollbar-color);
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #c9c3c3;
   border-radius: 2px;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--scrollbar-color);
 }
 
 /* -------------Header------------ */
 
 header {
   width: 100%;
-  padding: 13px 12px;
+  padding: 10px 12px;
   background-color: #fff;
   position: sticky;
   top: 0;
@@ -145,14 +146,14 @@ header .search-bar {
 }
 
 .setting i {
-  color: var(--icon-Color);
+  color: var(--icon-color);
 }
 
 .keyboard {
   position: absolute;
   right: 0;
   top: 10%;
-  color: var(--icon-Color);
+  color: var(--icon-color);
 }
 .search-input {
   position: relative;
@@ -176,13 +177,13 @@ header .search-bar {
 }
 
 .menu::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: var(--scrollbar-color);
 }
 
 .menu::-webkit-scrollbar-thumb {
   background-color: #c9c3c3;
   border-radius: 2px;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--scrollbar-color);
 }
 
 .menu-group {
@@ -195,7 +196,7 @@ header .search-bar {
 .menu-footer a {
   font-size: 0.8rem;
   font-weight: bold;
-  color: var(--icon-Color);
+  color: var(--icon-color);
 }
 .menu i {
   margin-right: 27px;
@@ -383,7 +384,7 @@ header .search-bar {
   }
   .short-icon {
     display: block;
-    padding-top: 8px;
+    padding-top: 11px;
   }
   .item-time {
     font-size: 0.1rem;
